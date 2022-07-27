@@ -1,0 +1,37 @@
+#title {
+    font-size: 30px;
+    background-color: rgba(211, 211, 211, 1);
+}
+
+#linkA {
+    text-decoration: none;
+    color: white;
+}
+#linkA:hover {
+    color:red;
+}
+
+.animate__flipInX {
+    background-color: black;
+}
+
+.animate__flipInX > button {
+    color:white;
+}
+
+.animate__flipInX > button:hover {
+    color: red;
+}
+
+#scroll {
+    width: 100%;
+    margin: 0 auto;
+    height: 35vh;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    line-height: 28px;
+    background-image: url(~../JeromeComponents/img/run.jpg);
+}

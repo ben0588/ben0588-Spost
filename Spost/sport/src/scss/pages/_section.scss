@@ -1,0 +1,833 @@
+// 測試與上層距離,改使用mt-6
+// .sectionBox1 {
+//     margin-top: 96px !important;
+// }
+
+
+// 輪播卡片區塊
+.cardBox {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index:1;
+}
+.cardBox:hover{
+  opacity:0.5 !important;
+}
+
+
+// 輪播圖片設定
+.carouselImgTest {
+    object-fit: cover;
+    justify-content:center;
+    opacity:1;
+    transition: all 0.6s ease;
+    z-index:1;
+}
+
+// 輪播圖片動畫
+.carouselImgTest:hover {
+    // box-shadow:1px;
+    opacity:0.7 !important;
+    // z-index:1;
+}
+
+// 輪播上方大標題文字底部區塊設定
+.carouselBoxBigText {
+    margin: 20px auto 0;
+    // border: 1px solid red ;
+    justify-content: center;
+    text-align: center;
+    line-height: 0;
+    height: auto;
+    width: auto;
+    word-wrap: break-word;
+}
+// 輪播上方大標題及內文設定 RWD
+@media (max-width:600px){
+  .carouselBoxBigText h1{
+    font-size: 22px;
+    // width: auto;
+    // height: auto;
+    justify-content: center;
+    word-wrap: break-word;
+  };
+};
+
+.carouselBoxBigText a {
+    font-size: calc(0.5rem);
+  }
+  
+  @media (min-width: 1200px) {
+    .carouselBoxBigText a  {
+      font-size: 1.2rem;
+    }
+  }
+
+
+// 輪播下方探索更多按鈕區塊設定
+.carouselBoxBottomText {
+    // position: absolute;
+    display:flex;
+    justify-content: right;
+    // margin: auto;
+    text-align:right;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    
+    // background-color: aquamarine;   
+}
+
+// 輪播下方探索更多按鈕 文字RWD區塊設定
+.carouselBoxBottomTextV2{
+    font-size: calc(0.5rem);
+  }
+  
+  @media (min-width: 1200px) {
+    .carouselBoxBottomTextV2{
+      font-size: 1rem;
+    }
+  }
+
+
+
+
+// @media (max-width:600px){
+//   .carouselBoxBottomTextV2 {
+//     font-size: 20px;
+//     width: 100%;
+//   }
+// };
+
+// @media (max-width:600px){
+//  .carouselBoxBottomTextV1 {
+//     width: 100%;
+//  }
+// };
+
+
+// 輪播下方探索更多按鈕區塊內 文字設定
+.carouselBoxBottomTextV1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    right: 0;
+    height:100%;
+    width: 100%;
+    // background-color: rgb(0, 0, 0);   
+}
+
+.carouselBoxBottomTextV1Right {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    right: 0;
+    height:100%;
+    width: auto;
+    // background-color: rgb(0, 0, 0);   
+}
+
+
+// 輪播下方探索更多按鈕區塊內 文字顏色
+.carouselBoxBottomTextV2{
+    color:brown !important;  
+}
+
+.carouselBoxBottomTextV2:hover{
+    color:rgb(0, 0, 0) !important;  
+}
+
+
+// 輪播中文字按鈕區塊位置,設置top或者bottom & 文字設定等
+.cardBoxText {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // top:10%;
+    bottom: 5%;
+    width: 90%;
+    height: 50px;
+    opacity: 1;
+    transition: all 0.6 ease-in-out;
+    z-index:1;
+    overflow: hidden;
+    line-height: 1;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+// .cardBoxTitle {
+//   padding:absolute;
+//   display: flex;
+//   left: 0;
+//   right: 0;
+//   top:0;
+//   bottom: 0;
+//   margin:auto;
+//   align-items: center;
+//   justify-content: center;
+//   font-weight: bolder;
+//   font-size:1.5vw;
+//   width: 90%;
+//   height: 50px;
+//   color:red;
+//   background-color: aqua;
+//   word-wrap: break-word;
+//   overflow: hidden;
+// }
+
+// 輪播中文字區塊特效
+// .cardBoxText a:hover {
+//     color: rgb(0, 0, 0) !important;
+//     // background-color: black !important;
+//     opacity: 1;
+//     z-index:1;
+// }
+
+// .cardBoxText:hover a{
+//     color: rgb(0, 0, 0) !important;
+//     opacity: 1;
+//     z-index:1;
+// }
+
+
+// 第二層背景底色
+.twoSectionBackgroundImg {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/white_wall_hash.png');
+
+}
+
+
+// 第三區塊section設定 (背景固定區塊)
+// 基底區塊
+.threeSectionBox {
+  margin-top: 96px;
+    position:relative;
+    display: flex;
+    // z-index:1;
+    width: 100%;
+    height: 700px;
+    // background-color: aquamarine;
+}
+
+// 底層圖片
+.threeSectionBoxBottomImg{
+    padding-top:25px;
+    // background-color:#d3d3d3;
+    // background-image:url('~../img/ben1.jpg');
+    // background-image:url('~../BenComponents/img/0724.jpg');
+    background-image:url('~../BenComponents/img/index/072404.jpg');
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-attachment:fixed;
+    background-size: cover;
+    // opacity: 0.8;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.192);
+    background-blend-mode: multiply;
+}
+
+
+
+// 動畫文字設定
+.threeSectionBoxContentText{
+  margin: auto;
+  position: absolute;
+  display:flex;
+  left: 0;
+  right:0;
+  top:27%;
+  // top:0;
+  // bottom: 0;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+  height:10%;
+  align-items: center;
+  justify-content: center;
+  // border: 2px dashed white;
+  border: 2px solid white;
+  z-index: 99;
+  overflow: hidden;
+  
+
+  h2 {
+    color:#333 !important;
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    position: relative;
+    font-weight: bolder !important;
+    
+  }
+  h2::after{
+    content:"Spost+陪你從訓練到改變!";
+    // color: rebeccapurple;
+    color:transparent !important;
+    // -webkit-background-clip: text;
+    // background-clip:text ;
+    // color:transparent;
+    position: absolute;
+    left: 0;
+    top:0;
+    // text-shadow:0 0 1px white,0 0 1px white;
+    clip-path: ellipse(30px 30px at 0% 50%) ;
+    animation:spotlightText 5s infinite;
+    // right: 0;
+    // bottom: 0;
+    // background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhZGllbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60');
+    // background-image: url('~../BenComponents/img/index/22053.png');
+    background-image: url('https://dummyimage.com/600x400/FFF/FFF');
+    background-size: 150%;
+    background-position: center center;
+
+    /* 設定依照背景圖片當顯示 */
+    -webkit-background-clip: text;
+    background-clip:text ;
+    color:transparent;
+  }
+}
+
+@keyframes spotlightText{
+    from{
+        clip-path: ellipse(30px 30px at 0% 50%)
+    }
+    50%{
+        clip-path: ellipse(30px 30px at 100% 50%)
+    }
+    to{
+        clip-path: ellipse(30px 30px at 0% 50%)
+    }
+}
+
+
+// 動畫文字設定(打字)
+.threeSectionBoxContentTextType{
+  margin: auto;
+  position: absolute;
+  display:flex;
+  left: 0;
+  right:0;
+  top:24%;
+  // top:0;
+  // bottom: 0;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+  height:10%;
+  align-items: center;
+  justify-content: center;
+  // border: 2px dashed white;
+  border: 2px solid white;
+  z-index: 99;
+
+  h2 {
+    color:#333 !important;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    position: relative;
+    font-weight: bolder !important;
+    
+  }
+  h2::after{
+    content:"Spost+陪你從訓練到改變!";
+    // color: rebeccapurple;
+    color:transparent !important;
+    // -webkit-background-clip: text;
+    // background-clip:text ;
+    // color:transparent;
+    position: absolute;
+    left: 0;
+    top:0;
+    // text-shadow:0 0 1px white,0 0 1px white;
+    clip-path: ellipse(30px 25px at 0% 50%) ;
+    animation:spotlightText 7s infinite !important;
+    // right: 0;
+    // bottom: 0;
+    // background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhZGllbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60');
+    background-image: url('~../BenComponents/img/index/22053.png');
+    background-size: 150%;
+    background-position: center center;
+
+    /* 設定依照背景圖片當顯示 */
+    -webkit-background-clip: text;
+    background-clip:text ;
+    color:transparent;
+  }
+}
+
+@keyframes spotlightText{
+    from{
+        clip-path: ellipse(30px 25px at 0% 50%)
+    }
+    50%{
+        clip-path: ellipse(30px 25px at 100% 50%)
+    }
+    to{
+        clip-path: ellipse(30px 25px at 0% 50%)
+    }
+}
+
+
+// 設定第一層固定的底框
+.threeSectionBoxContentBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  // background-color: aliceblue;
+  // border: 1px solid white;
+  position:absolute;
+  // top:20%;
+  top:0;
+  margin:0 auto;
+  align-items: center;
+  justify-content: center;
+  // margin: auto;
+}
+
+// 評論區卡片設定
+.threeCard{
+  display: flex;
+  // width: 300px;
+  width: 17%;
+  height:250px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding: 5px;
+  // border: 2px solid white;
+  background-color: #000000 !important;
+  // border: 0.5px solid white !important;
+  border: 0.5px solid white !important;
+  // box-shadow: 0 1px 5px white;
+ 
+  // margin:auto;
+  img{
+    object-fit: cover;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius:50%;
+    background-size: cover;
+    background-position: center center;
+  }
+  a{
+    font-size: 20px;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    color: rgb(204, 199, 199) !important;
+  }
+  p{
+    font-size: 16px;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    color: rgb(204, 199, 199) !important;
+  }
+}
+
+// 第二固定背景圖區塊設定
+.threeSectionBoxV1 {
+  position:relative;
+  display: flex;
+  // z-index:1;
+  width: 100%;
+  height: 700px;
+  // background-color: aquamarine;
+}
+
+.threeSectionBoxBottomImgV1{
+  padding-top:25px;
+  // background-color:#d3d3d3;
+  background-image:url('~../BenComponents/img/index/0724.jpg');
+  background-repeat:no-repeat;
+  background-position:center top;
+  background-attachment:fixed;
+  background-size: cover;
+  opacity:1 !important;
+}
+
+.threeSectionBoxV1Card{
+  display: flex;
+  position:absolute;
+  left: 0;
+  top:0;
+  right:0;
+  bottom:0;
+  justify-content: center;
+  align-items:center;
+  margin: auto;
+  width: 100% !important;
+  height:100% !important;
+  // background-color: #333;
+}
+
+.threeSectionBoxV1CardContent{
+  display: flex;
+    // width: 50%;
+    height: 300px;
+    // background-color: #333;
+    position: absolute;
+    // margin:0;
+    // width: 100%;
+    border:2px solid white !important;
+    // margin: auto;
+    perspective:1000px !important;
+
+
+      .BenImgCard{
+        position: relative;
+        display: flex;
+        width: 200px !important;
+        height: 300px;
+        // background-color: #333;
+        // margin: auto;
+        margin:0;
+        width: 100%;
+
+        border:1px solid white !important;
+        text-align: center;
+        perspective: 1000px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+    }
+    
+    .BenImgCardCover,.BenImgCardBack{
+      // display: flex;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      transition: transform 0.35s ease-in-out;
+    }
+    .BenImgCardCover{
+      background-color: #000000 ;
+      color: white;
+      transform: perspective(1000px) rotateY(0deg);
+      img{
+        width: 100%;
+        height: 100%;
+        // background-position: center center;
+
+        object-fit: cover;
+        opacity: 0.8;
+        background-color: rgb(0, 0, 0) !important;
+        background-blend-mode: multiply !important;
+        // transform:rotateY(180deg);
+        // backface-visibility: hidden;
+      }
+    }
+    .BenImgCardBack{
+      // display: flex;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 1px;
+      background-color: #000000 ;
+      color: white !important;
+      transform: perspective(1000px) rotateY(-180deg);
+      align-items: center;
+      justify-items: center;
+      margin: auto;
+
+      h5{
+        top:30px;
+        margin: 10px auto;
+        word-wrap: break-word;
+        align-items: center;
+        justify-content: center;
+        // font-size: 16px;
+      }
+      h4{
+        // position: absolute;
+        margin: 10px auto;
+        word-wrap: break-word;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: rgb(153, 163, 163);
+      }
+      p{
+        // position: absolute;
+        // top:60px;
+        margin: 10px auto;
+        font-size: 16px;
+        // border:1px solid rgb(0, 0, 0);
+      }
+      .BenImgCardBottom{
+        // display: flex;
+        position: absolute;
+        // top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:#ff0000;
+        word-wrap: break-word;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+      }
+
+
+    }
+
+    .BenImgCard:hover .BenImgCardCover{
+      transform: rotateY(180deg);
+    }
+
+    .BenImgCard:hover .BenImgCardBack{
+      transform: rotateY(0deg);
+    }
+
+
+// 第一區塊Section放滿版 放介紹標語
+// 底部區塊
+.oneSectionBox {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 270px;
+    background-color: black;
+}
+
+// 每隔col區塊,放文字跟按鈕用
+.oneSectionBoxCol {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(241, 0, 0);
+    // display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: auto;
+    // border: 1px solid white;
+}
+
+// 每隔col區塊,放文字跟按鈕用 RWD
+.oneSectionBoxCol h1 {
+    font-size: calc(1rem);
+  }
+  
+  @media (min-width: 1200px) {
+    .oneSectionBoxCol h1{
+      font-size: 2.5rem;
+    }
+  }
+  
+
+  .oneSectionBoxCol h4 {
+    font-size: calc(16px);
+  }
+  
+  @media (min-width: 1200px) {
+    .oneSectionBoxCol h4{
+      font-size: 1.5rem;
+
+    }
+  }
+  
+.oneSectionBoxText {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    // background-color: rgb(241, 0, 0);
+    // display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.oneSectionBoxButton {
+    margin: auto;
+    width: 100%;
+    // background-color: rgb(241, 0, 0);
+    // display: flex;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: auto;
+    a{
+      font-size: 1em;
+
+    }
+    a:hover{
+      background-color: aquamarine;
+      color: red;
+    }
+}
+
+// 第四區塊Section文件置中
+.fourthSectionBox{
+    display: flex;
+    padding: 3%;
+    width: 100%;
+    height: auto;
+    background-color: crimson;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.fourthSectionBoxCol{
+    margin: 10px;
+    padding: 30px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(238, 173, 186);
+    justify-content: center;
+    align-content: center;
+}
+
+.fourthSectionBoxColText{
+    margin: 10px;
+    padding: 30px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(110, 4, 25);
+    justify-content: center;
+    align-content: center;
+}
+
+
+// 下方打字機效果區塊
+.threeSectionBoxContentTextV1{
+  display:flex;
+  position: relative;
+  left: 0;
+  right:0;
+  top:14%;
+  width: 100%;
+  height:12%;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+
+.container-text{
+  position:relative;
+  display: flex;
+  height: 50px;
+  width: 50%;
+  // top:35%;
+  overflow:hidden;
+  align-content: center;
+  justify-content:center;
+  color: #ffffff;
+  margin:0 auto;
+  background-color: #000000;
+  border:1px solid white;
+  
+
+  font-weight: bold;
+  /* background-color: bisque; */
+}
+
+.container-text h2{
+  // font-weight: bolder;
+  margin: auto 0;
+  // text-shadow:0 0 2px rgb(255, 255, 255), 0 0 5px blueviolet;
+}
+
+
+/* 設定文字不換行 */
+.text-wrapper{
+  white-space:nowrap;
+
+}
+
+.text{
+  position:relative;
+  height: 50px;
+  margin-left:5px;
+  white-space:nowrap;
+  font-weight:bold;
+  color:aqua;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  // background-color: #ff0000;
+  ::before{
+    content:'';
+    position:absolute;
+    border-left:1px solid #ffffff;
+    width: 100%;
+    height:70%;
+    bottom:0;
+    left: 0;      
+    top:0;
+    right:0;      
+    align-items: center;
+    justify-content:center;
+    margin: auto 0;
+    background-color:black;
+    // overflow: hidden;
+    
+    animation: typewriter 3.5s steps(10) infinite,
+               blink 0.5s steps(10) infinite;
+  
+    
+  }
+}
+
+.text h2 {
+  left: 0;
+  align-items: center;
+  justify-content:center;
+  margin: auto 0;
+}
+
+
+@keyframes typewriter{
+  40%,60%{
+      left:100%;
+  }
+  100%{
+      left:0;
+  }
+}
+
+@keyframes blink{
+  from{
+      border-left:1px solid #ffffff;
+  }
+  to{
+      /* transparent 透明 (權絲潘勒次) */
+      border-left:1px solid transparent;
+  }
+}
+.text-wrapper{
+  position:relative;
+  animation:moveup 7s steps(2) infinite;
+}
+@keyframes moveup{
+  0%{
+      top:0;
+  }
+  100%{
+      top:-100px;
+  }
+}
+
+
+// 第五區塊Section滿版
+.fifthSectionBox{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(241, 130, 122);
+}
+
+
+

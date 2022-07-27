@@ -1,0 +1,50 @@
+// 需安裝套件
+// npm install sass
+
+// (1)安裝VS code套件 
+// 搜尋:Live Sass Compile
+// 點擊最下方狀態列中 Watch Sass 保持即時更新,若不需要則再次點擊
+
+// 在scss中引用url時務必加上~開頭,否則會報錯讀取不了
+
+// 來自bootstrap原始檔下載後,將裡面的scss改名後放入scss資料夾內
+@import "bootstrap/bootstrap";
+// 依照頁功能進行修改_index就好,本頁用於合併其他scss屬性,放後面是因為後蓋前
+
+// 全站設定
+@import './base/base';
+
+// 首頁
+@import './pages/index';
+@import './pages/navbar';
+@import './pages/header';
+@import './pages/section';
+@import './pages/footer';
+
+
+// 課程與教練
+@import "./pages/coursesAndVenues";
+
+//元件區域
+@import './components/cartButtom';
+@import './components/messageButton';
+
+// 東佑CSS
+@import './DongCSS/search';
+
+// 冠穎CSS
+@import './JeromeCSS/CV';
+@import './JeromeCSS/login';
+
+//外部套件區
+// aos.js
+// npm i --save @fortawesome/fontawesome-svg-core
+// npm install --save @fortawesome/free-solid-svg-icons
+// npm install --save @fortawesome/react-fontawesome
+// npm install @mui/material @emotion/react @emotion/styled
+// npm install animate.css --save
+// npm install react-calendar --save
+
+// 新增自訂義屬性 ->scss ->bootstrap ->_variables.scss-> $theme-colors: 
+// 自訂義"test":#FFDF65 ,套用所有text-test、bg-test、btn-test 所有色系,以已達成一次修改主色需求
+// 此頁不寫code

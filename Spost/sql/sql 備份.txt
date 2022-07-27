@@ -1,0 +1,3 @@
+mysqldump -u root spost> C:\Users\pipim\OneDrive桌面\spost.sql
+
+mysqldump -u root spost> C:\Users\Jerome\Downloads\spost.sql

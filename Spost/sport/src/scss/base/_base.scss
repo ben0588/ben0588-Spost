@@ -1,0 +1,36 @@
+// base 全站設定
+// 因為navbar長度是76若要剛好改76
+body {
+    margin-top: 76px !important;
+}
+img {
+    // display: block;
+    // max-width: 100%;
+    // height: auto;
+    // margin:auto;
+}
+
+// img:hover {
+//     transition: all linear 300ms;
+// }
+
+a {
+    // transition: all linear 300ms !important;
+    text-decoration:none !important;
+    color: black;
+}
+
+
+// a:hover {
+//     color: rgb(255, 255, 255) !important;
+// }
+
+
+p{
+    // text-decoration:none !important;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}

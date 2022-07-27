@@ -1,0 +1,91 @@
+.footer {
+    position:relative;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: rgb(139, 139, 139);
+}
+
+// 設定頁尾中間格子
+.footerBox{
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    // background-color: red;
+    width: 80%;
+    height: 80%; 
+}
+
+.footerIcon{
+    position:absolute;
+    display: flex;
+    margin:0 auto;
+    // background-color: #1da1f2;
+    width: 26%;
+    height: 20%;
+    left: 0;
+    top:3%;
+    right: 0;
+    bottom:0;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutTitle{
+    position: relative;
+    left: 0;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutData{
+    position:absolute;
+    display: flex;
+    margin:auto;
+    // background-color: #dee2e5;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    top:35%;
+    right: 0;
+    bottom:0;
+    justify-content: center;
+    align-items: center;
+
+}
+// .privacyText::before{
+//     content:"55235";
+//     position:absolute;
+//     bottom:0;
+//     left: 0;      
+//     top:0;
+//     right:0;      
+//     align-items: center;
+//     justify-content:center;
+//     margin: auto;
+//     color: #1877f2  ;
+//     align-items: center;
+//     justify-content:center;
+
+// }
+
+.icon1:hover {
+    color: #833ab4 !important;
+}
+.icon2:hover {
+    color:#1877f2 !important
+}
+.icon3:hover {
+    color:#ff0000 !important
+}
+.icon4:hover {
+    color:#1da1f2 !important
+}
